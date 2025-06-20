@@ -2,9 +2,14 @@
 
 int main(){
 
+    // Váriaveis
+
     char estado, estado2, codigo[4], codigo2[4], cidade[20], cidade2[20];
-    int populacao, populacao2, pontos, pontos2;
+    unsigned int populacao, populacao2;
+    int pontos, pontos2;
     float area, area2, pib, pib2, densidade, densidade2, pibpercapita, pibpercapita2;
+
+    // Coleta de Dados
 
     printf(">>PRIMEIRA CARTA<<\n\n");
 
@@ -18,7 +23,7 @@ int main(){
     scanf("%s", &cidade);
 
     printf("POPULAÇÃO: ");
-    scanf("%d", &populacao);
+    scanf("%u", &populacao);
 
     printf("ÀREA (km²): a área da cidade em quilômetros quadrados: ");
     scanf("%f", &area);
@@ -42,7 +47,7 @@ int main(){
     scanf("%s", &cidade2);
 
     printf("POPULAÇÃO: ");
-    scanf("%d", &populacao2);
+    scanf("%u", &populacao2);
 
     printf("ÀREA (km²), a área da cidade em quilômetros quadrados: ");
     scanf("%e", &area2);
@@ -53,16 +58,20 @@ int main(){
     printf("Número de Pontos Turísticos: ");
     scanf("%d", &pontos2);
 
+    // Cáculo da densidade populacional e do PIB
+
     densidade = populacao / area;
     densidade2 = populacao2 / area2;
     pibpercapita = (float) populacao / pib;
     pibpercapita2 = (float) populacao2 / pib2;
 
+    //Cartas
+
     printf("\nCarta:1");
     printf("Estado: %c\n", estado);
     printf("Código: %s\n", codigo);
     printf("Nome da Cidade: %s\n", cidade);
-    printf("População: %d\n", populacao);
+    printf("População: %u\n", populacao);
     printf("Àrea: %.2f km²\n", area),
     printf("PIB: %.2f Bilhões de Reais\n", pib);
     printf("Número de Pontos Turísticos: %d\n", pontos);
@@ -74,7 +83,7 @@ int main(){
     printf("Estado: %c\n", estado2);
     printf("Código: %s\n", codigo2);
     printf("Nome da Cidade: %s\n", cidade2);
-    printf("População: %d\n", populacao2);
+    printf("População: %u\n", populacao2);
     printf("Àrea: %.2f km²\n", area2),
     printf("PIB: %.2f Bilhões de Reais\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", pontos2);

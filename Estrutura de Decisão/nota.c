@@ -6,8 +6,9 @@ int main(){
     
     if(nota >= 6){
       printf("Você Passou!\n");
-    }
-    else{
+    
+    }else{
       printf("Você não passou, Estude Mais.\n");
+      
     }
 }

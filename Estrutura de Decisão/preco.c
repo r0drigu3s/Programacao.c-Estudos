@@ -4,14 +4,14 @@ int main(){
      int preco1 = 22.00;
      int preco2 = 22.00;
 
-     if(preco1 > preco2){
+     if(preco1 > preco2) {
         printf("O Preço 1 é maior\n");
-    }
-    else{
-        if(preco1 < preco2){
+    
+    }else {
+        if(preco1 < preco2) {
            printf("O Preço 2 é maior\n");
-        }
-        else{
+        
+        }else {
             printf("Os Preços são iguais.\n");
         }
         }

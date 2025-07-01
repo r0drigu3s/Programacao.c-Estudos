@@ -6,12 +6,10 @@ int main(){
 
      if(preco1 > preco2) {
         printf("O Preço 1 é maior\n");
-    
-    }else {
+    } else {
         if(preco1 < preco2) {
            printf("O Preço 2 é maior\n");
-        
-        }else {
+        } else {
             printf("Os Preços são iguais.\n");
         }
         }

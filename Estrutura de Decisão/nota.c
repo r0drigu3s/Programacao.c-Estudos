@@ -2,12 +2,12 @@
 
 int main(){
 
-    int nota = 5;
+    int nota = 98;
     
-    if(nota >= 6){
+    if(nota >= 60){
       printf("Você Passou!\n");
     
-    }else{
+    } else {
       printf("Você não passou, Estude Mais.\n");
       
     }

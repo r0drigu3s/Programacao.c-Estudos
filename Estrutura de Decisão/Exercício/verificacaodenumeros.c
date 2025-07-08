@@ -6,4 +6,6 @@ int main(){
 
     printf("Digite um número: ");
     scanf("%d", &numero);
+
+    
 }
